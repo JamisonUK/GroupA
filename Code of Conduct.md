@@ -45,7 +45,7 @@ As members of the team we are committed to working in a professional and welcomi
     
 In the case of a member not attending the meeting without reason you are to buy a coffee for everyone in the team. Justifications are allowed. If more extra meetings are needed during the week, this can be done online during a time when each member is free.
 
-* **Problems** - In case of serious problems within the team, report it to staff (Dr. Tehrani).
+* **Problems** - In case of serious problems within the team, report it to staff (Kevin).
 
 * **Authorship** - Bring student ID to verify authorship of work in the project and to 
     record attendance.
