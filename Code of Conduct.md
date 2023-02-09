@@ -47,8 +47,7 @@ In the case of a member not attending the meeting without reason you are to buy 
 
 * **Problems** - In case of serious problems within the team, report it to staff (Kevin).
 
-* **Authorship** - Bring student ID to verify authorship of work in the project and to 
-    record attendance.
+* **Authorship** - Bring student ID to record attendance.
 
 * **Requirements** - Always follow the instructions and specifications of the Client. Inform the client 
     about improvements/developments as soon as possible by verbal communication
