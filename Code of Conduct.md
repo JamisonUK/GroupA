@@ -72,4 +72,4 @@ Members in the team who do not follow the Code of Conduct, may face temporary or
 
 * Jamison
 
-* 
+* Badis
