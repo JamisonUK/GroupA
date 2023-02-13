@@ -9,7 +9,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Roehampton][Roehampton-shield]][Roehampton-url]
 
 
 
@@ -208,8 +208,8 @@ State resources or references
 [issues-url]: https://github.com/JamisonUK/GroupA/issues
 [license-shield]: https://img.shields.io/github/license/JamisonUK/GroupA
 [license-url]: https://github.com/JamisonUK/GroupA/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: ttps://linkedin.com
+[Roehampton-shield]: https://img.shields.io/badge/-Roehmpton%20University-brightgreen
+[Roehampton-url]: https://www.roehampton.ac.uk
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
