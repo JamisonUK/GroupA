@@ -16,7 +16,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="[https://github.com/JamisonUK/GroupA/main/ReadME.md]">
+  <a href="https://github.com/JamisonUK/GroupA/blob/main/ReadME.md">
     <img src="/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
