@@ -16,8 +16,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/JamisonUK/GroupA/main/ReadME.md">
-    <img src="[images/logo.png](https://hackersandslackers-cdn.storage.googleapis.com/2020/05/dataengineering.png)" alt="Logo" width="80" height="80">
+  <a href="[https://github.com/JamisonUK/GroupA/main/ReadME.md]">
+    <img src="/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Data Engeneering Project</h3>
