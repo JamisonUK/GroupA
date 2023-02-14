@@ -214,7 +214,7 @@ State resources or references
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Airflow-shield]: https://img.shields.io/badge/Airflow-1?style=for-the-badge&logo=apacheairflow&logoColor=black
+[Airflow-shield]: https://img.shields.io/badge/Airflow-0769AD?style=for-the-badge&logo=apacheairflow&logoColor=black
 [Airflow-url]: https://airflow.apache.org
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [Angular-url]: https://angular.io/
