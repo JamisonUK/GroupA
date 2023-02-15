@@ -174,7 +174,7 @@ This project is licensed under the terms of the MIT license. Check `LICENSE.txt`
 <!-- CONTACT -->
 ## Contact
 
-[![Badis Aoun][Badis-shield]]  - aounb@roehampton.ac.uk
+[![Badis Aoun][Badis-shield]][Badis-url]  - aounb@roehampton.ac.uk
 
 Project Link: [https://github.com/JamisonUK/GroupA](https://github.com/JamisonUK/GroupA)
 
@@ -227,3 +227,4 @@ State resources or references
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com
 [Badis-shield]: https://img.shields.io/badge/Badis-Aoun-blue.svg
+[Badis-url]: aounb@roehampton.ac.uk
