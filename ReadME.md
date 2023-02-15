@@ -73,6 +73,11 @@
 
 This project is made using Apache Airflow
 
+The datasets we are using come from
+http://millionsongdataset.com/
+We will be coordinating data from several sets that will contain information
+about songs from listener data to lyric content.
+
 <!-- Back to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
