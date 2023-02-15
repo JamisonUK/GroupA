@@ -154,7 +154,17 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 <!-- CONTRIBUTING -->
 ## Sprints
 
-Sppecify sprints
+- Sprint 1
+
+  - GitHub project for coursework setup.
+  - Product backlog created.
+  - Initial tasks are defined as user stories.
+  - Kanban/project board being used.
+  - Sprint boards are being used.
+  - Necessary starting docker files for the project set up and working.
+  - Correct branches for GitFlow workflow created – includes master, develop, and release branches.
+  - The first release was created on GitHub.
+  - Code of Conduct defined.
 
 
 
@@ -174,7 +184,7 @@ This project is licensed under the terms of the MIT license. Check `LICENSE.txt`
 <!-- CONTACT -->
 ## Contact
 
-Badis Aoun  - aounb@roehampton.ac.uk
+[![Badis Aoun][Badis-shield]][Badis-url]
 
 Project Link: [https://github.com/JamisonUK/GroupA](https://github.com/JamisonUK/GroupA)
 
@@ -225,4 +235,6 @@ State resources or references
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
+[Badis-shield]: https://img.shields.io/badge/Badis-Aoun-blue.svg
+[Badis-url]: https://github.com/Elvis-Jagger-Abdul-Jabbar
