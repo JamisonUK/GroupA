@@ -174,7 +174,7 @@ This project is licensed under the terms of the MIT license. Check `LICENSE.txt`
 <!-- CONTACT -->
 ## Contact
 
-[Badis-shield]  - aounb@roehampton.ac.uk
+[![Badis Aoun][Badis-shield]]  - aounb@roehampton.ac.uk
 
 Project Link: [https://github.com/JamisonUK/GroupA](https://github.com/JamisonUK/GroupA)
 
