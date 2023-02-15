@@ -184,8 +184,6 @@ This project is licensed under the terms of the MIT license. Check `LICENSE.txt`
 <!-- CONTACT -->
 ## Contact
 
-[![Badis Aoun][Badis-shield]][Badis-url]
-
 Project Link: [https://github.com/JamisonUK/GroupA](https://github.com/JamisonUK/GroupA)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
