@@ -154,7 +154,17 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 <!-- CONTRIBUTING -->
 ## Sprints
 
-Sppecify sprints
+- Sprint 1
+
+  - GitHub project for coursework setup.
+  - Product backlog created.
+  - Initial tasks are defined as user stories.
+  - Kanban/project board being used.
+  - Sprint boards are being used.
+  - Necessary starting docker files for the project set up and working.
+  - Correct branches for GitFlow workflow created – includes master, develop, and release branches.
+  - The first release was created on GitHub.
+  - Code of Conduct defined.
 
 
 
