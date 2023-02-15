@@ -69,9 +69,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://airflow.apache.org/)
+<!--[![Product Name Screen Shot][product-screenshot]]https://airflow.apache.org/._-->
 
-This project is made using Apache Airflow
+This is a Data Engeneering group project made using Apache Airflow.
+It aims as creating a system (data pipeline) for a business’s smooth and efficient data delivery.
+The business model is a music streaming service.
+The datasets we are using come from http://millionsongdataset.com/ We will be coordinating data from several sets that will contain information about songs from listener data to lyric content.
 
 The datasets we are using come from
 http://millionsongdataset.com/
@@ -87,9 +90,11 @@ about songs from listener data to lyric content.
 List tools and technologies used to deliver this project.
 
 * [![Airflow][Airflow-shield]][Airflow-url]
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python.js]][Python-url]
+* [![Mysql][Mysql.js]][Mysql-url]
+
+Badges made with:
+* [![ShieldsIO][Shields.io]][Shields-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,15 +107,10 @@ Getting started section
 
 ### Prerequisites
 
-State what is needed to set up the project
-* cocker
-  ```sh
-  docker compose
-  ```
+- Docker Desktop
+- Code Editor
 
 ### Installation
-
-_State/Instruct how to install/launch the project ._
 
 1. Clone the repo
    ```sh
@@ -124,6 +124,15 @@ _State/Instruct how to install/launch the project ._
    ```js
    pip install "apache-airflow[celery]==2.1.4" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.1.4/constraints-3.6.txt"
    ```
+4. Mount Airflow Image
+   ```sh
+   docker compose up airflow-init
+   ```
+5. Launch Docker
+   ```sh
+   docker compose
+   ```
+6. Navigate to localhost://8080
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,8 +140,6 @@ _State/Instruct how to install/launch the project ._
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Explain how to use the project
 
 _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 
@@ -145,8 +152,8 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 
 - [x] Identifying the requirements (functional and non-functional)
 - [x] Prioritising the requirements (if applicable)
-- [ ] Task allocation
-- [ ] Identifying the scope of your project
+- [x] Task allocation
+- [x] Identifying the scope of your project
 - [ ] Identifying the stakeholders
 - [ ] Risk management
 
@@ -180,7 +187,7 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 <!-- LICENSE -->
 ## License
 
-This project is licensed under the terms of the MIT license. Check `LICENSE.txt`for more information.
+This project is licensed under the terms of the MIT license. Check `LICENSE.cmd`for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,8 +230,8 @@ State resources or references
 [Roehampton-shield]: https://img.shields.io/badge/Roehampton%20University-green.svg?logo=data:image/jpeg;base64,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
 [Roehampton-url]: https://www.roehampton.ac.uk
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
+[Python.js]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Airflow-shield]: https://img.shields.io/badge/Airflow-0769AD?style=for-the-badge&logo=apacheairflow&logoColor=white
@@ -233,11 +240,11 @@ State resources or references
 [Angular-url]: https://angular.io/
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
+[Shields.io]: https://img.shields.io/badge/Shields-IO-blue
+[Shields-url]: https://shields.io
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+[Mysql.js]: https://img.shields.io/badge/Mysql-orange?style=for-the-badge&logo=mysql&logoColor=black
+[Mysql-url]: https://www.mysql.com/
 [Badis-shield]: https://img.shields.io/badge/Badis-Aoun-blue.svg
 [Badis-url]: https://github.com/Elvis-Jagger-Abdul-Jabbar
