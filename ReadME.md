@@ -74,7 +74,6 @@
 This is a Data Engeneering group project made using Apache Airflow.
 It aims as creating a system (data pipeline) for a business’s smooth and efficient data delivery.
 The business model is a music streaming service.
-The datasets we are using come from http://millionsongdataset.com/ We will be coordinating data from several sets that will contain information about songs from listener data to lyric content.
 
 The datasets we are using come from
 http://millionsongdataset.com/
