@@ -46,7 +46,7 @@ def ProcessEmployees():
     @taskgit 
     def get_data():
         # NOTE: configure this as appropriate for your airflow environment
-        data_path = "/opt/airflow/dags/files/employees.csv"
+        data_path = "/opt/airflow/data/employees.csv"
         os.makedirs(os.path.dirname(data_path), exist_ok=True)
 
         url = "https://raw.githubusercontent.com/apache/airflow/main/docs/apache-airflow/tutorial/pipeline_example.csv"
