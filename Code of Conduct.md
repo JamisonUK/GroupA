@@ -40,8 +40,8 @@ As members of the team we are committed to working in a professional and welcomi
     times per week. 
     The meeting times will be held on : 
     
+    Tuesday (13:00 - 13:45)
     Thursday (10:00 - 14:00)
-    Friday (17:00 - 18:00)
     
 In the case of a member not attending the meeting without reason you are to buy a coffee for everyone in the team. Justifications are allowed. If more extra meetings are needed during the week, this can be done online during a time when each member is free.
 
@@ -65,9 +65,9 @@ Members in the team who do not follow the Code of Conduct, may face temporary or
  **By writing my name in capitals below, I have understood the guidelines and have read all the code of conduct rules and ethics required in the work enviroment and pledge to follow it**
 
 
-* ABANOUB
+* Abanoub
 
-* WARIS
+* Waris
 
 * Jamison
 
