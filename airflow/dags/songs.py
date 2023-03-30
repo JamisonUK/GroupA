@@ -21,7 +21,7 @@ def LoadSongs():
         postgres_conn_id="data-test",
         sql="""
             CREATE TABLE IF NOT EXISTS songs (
-                "Track_ID" CHAR PRIMARY KEY,
+                "Track_ID" VARCHAR PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
@@ -32,7 +32,7 @@ def LoadSongs():
         sql="""
             DROP TABLE IF EXISTS songs_temp;
             CREATE TABLE songs_temp (
-                "Track_ID" CHAR PRIMARY KEY,
+                "Track_ID" VARCHAR PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
@@ -43,7 +43,7 @@ def LoadSongs():
         data_path = "/opt/airflow/data/kaggle_songs.csv"
         os.makedirs(os.path.dirname(data_path), exist_ok=True)
 
-        url = "https://github.com/JamisonUK/GroupA/tree/main/DataSet/kaggle_songs.csv"
+        url = "https://raw.githubusercontent.com/JamisonUK/GroupA/develop/DataSet/kaggle_songs.csv"
 
         response = requests.request("GET", url)
 
