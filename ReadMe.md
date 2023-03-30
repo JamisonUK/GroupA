@@ -80,9 +80,8 @@ http://millionsongdataset.com/
 We will be coordinating data from several sets that will contain information
 about songs from listener data to lyric content.
 
-A quick guide is available in Wiki section for general installation and command lines etc.
+A Quick Guide is available in Wiki section for general installation and command lines etc.
 
-https://github.com/JamisonUK/GroupA/wiki/Wiki
 
 <!-- Back to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
