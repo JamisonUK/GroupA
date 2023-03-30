@@ -128,11 +128,11 @@ Getting started section
    ```
 4. Mount Airflow Image
    ```sh
-   docker compose up airflow-init
+   docker-compose up airflow-init
    ```
 5. Launch Docker
    ```sh
-   docker compose
+   docker-compose up
    ```
 6. Navigate to localhost://8080
 
