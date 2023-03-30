@@ -30,9 +30,9 @@
     <br />
     <a href="https://github.com/users/JamisonUK/projects/1">Kanban Board</a>
     ·
-    <a href="https://github.com/JamisonUK/GroupA/issues">Log Issue</a>
+    <a href="https://github.com/JamisonUK/GroupA/issues">Log an Issue</a>
     ·
-    <a href="https://github.com/JamisonUK/GroupA/FAQ.md">FAQ</a>
+    <a href="https://github.com/JamisonUK/GroupA/wiki/Quick-Guide">Quick Guide</a>
   </p>
 </div>
 
