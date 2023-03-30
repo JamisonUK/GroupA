@@ -43,7 +43,7 @@ def ProcessEmployees():
             );""",
     )
 
-    @taskgit 
+    @task
     def get_data():
         # NOTE: configure this as appropriate for your airflow environment
         data_path = "/opt/airflow/data/employees.csv"
