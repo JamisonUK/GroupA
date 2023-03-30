@@ -20,8 +20,8 @@ def LoadSongs():
         task_id="create_songs",
         postgres_conn_id="songs",
         sql="""
-            CREATE TABLE IF NOT EXISTS employees (
-                "Track ID" CHAR PRIMARY KEY,
+            CREATE TABLE IF NOT EXISTS songs (
+                "Track_ID" CHAR PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
@@ -32,7 +32,7 @@ def LoadSongs():
         sql="""
             DROP TABLE IF EXISTS songs_temp;
             CREATE TABLE IF NOT EXISTS songs (
-                "Track ID" NUMERIC PRIMARY KEY,
+                "Track_ID" NUMERIC PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
