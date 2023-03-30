@@ -18,21 +18,21 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 def LoadSongs():
     create_songs = PostgresOperator(
         task_id="create_songs",
-        postgres_conn_id="songs",
+        postgres_conn_id="data-test",
         sql="""
             CREATE TABLE IF NOT EXISTS songs (
-                "Track_ID" CHAR PRIMARY KEY,
+                "Track_ID" VARCHAR PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
 
     create_songs_temp = PostgresOperator(
         task_id="create_songs_temp",
-        postgres_conn_id="songs",
+        postgres_conn_id="data-test",
         sql="""
             DROP TABLE IF EXISTS songs_temp;
-            CREATE TABLE IF NOT EXISTS songs (
-                "Track_ID" NUMERIC PRIMARY KEY,
+            CREATE TABLE songs_temp (
+                "Track_ID" VARCHAR PRIMARY KEY,
                 "ID" INTEGER
             );""",
     )
@@ -43,14 +43,14 @@ def LoadSongs():
         data_path = "/opt/airflow/data/kaggle_songs.csv"
         os.makedirs(os.path.dirname(data_path), exist_ok=True)
 
-        url = "https://github.com/JamisonUK/GroupA/tree/develop/DataSet/kaggle_songs.csv"
+        url = "https://raw.githubusercontent.com/JamisonUK/GroupA/develop/DataSet/kaggle_songs.csv"
 
         response = requests.request("GET", url)
 
         with open(data_path, "w") as file:
             file.write(response.text)
 
-        postgres_hook = PostgresHook(postgres_conn_id="songs")
+        postgres_hook = PostgresHook(postgres_conn_id="data-test")
         conn = postgres_hook.get_conn()
         cur = conn.cursor()
         with open(data_path, "r") as file:
@@ -73,7 +73,7 @@ def LoadSongs():
             SET "Track_Id" = excluded."Track_ID";
         """
         try:
-            postgres_hook = PostgresHook(postgres_conn_id="songs")
+            postgres_hook = PostgresHook(postgres_conn_id="data-test")
             conn = postgres_hook.get_conn()
             cur = conn.cursor()
             cur.execute(query)
@@ -83,6 +83,7 @@ def LoadSongs():
             return 1
 
     [create_songs, create_songs_temp] >> get_data() >> merge_data()
+
 
 
 dag = LoadSongs()
