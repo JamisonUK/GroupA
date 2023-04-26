@@ -9,41 +9,39 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 
 
 @dag(
-    dag_id="kaggle_songs",
+    dag_id="kaggle_users",
     schedule_interval="0 0 * * *",
     start_date=pendulum.datetime(2023, 3, 30, tz="UTC"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
 )
-def LoadSongs():
-    create_songs = PostgresOperator(
-        task_id="create_songs",
+def LoadUsers():
+    create_users = PostgresOperator(
+        task_id="create_users",
         postgres_conn_id="data-test",
         sql="""
-            CREATE TABLE IF NOT EXISTS songs (
-                "Song_ID" VARCHAR PRIMARY KEY,
-                "Index" INTEGER
+            CREATE TABLE IF NOT EXISTS users (
+                "User_ID" VARCHAR PRIMARY KEY,
             );""",
     )
 
-    create_songs_temp = PostgresOperator(
-        task_id="create_songs_temp",
+    create_users_temp = PostgresOperator(
+        task_id="create_users_temp",
         postgres_conn_id="data-test",
         sql="""
-            DROP TABLE IF EXISTS songs_temp;
-            CREATE TABLE songs_temp (
-                "Song_ID" VARCHAR PRIMARY KEY,
-                "Index" INTEGER
+            DROP TABLE IF EXISTS users_temp;
+            CREATE TABLE users_temp (
+                "User_ID" VARCHAR PRIMARY KEY,
             );""",
     )
 
     @task
     def get_data():
         # NOTE: configure this as appropriate for your airflow environment
-        data_path = "/opt/airflow/data/kaggle_songs.csv"
+        data_path = "/opt/airflow/data/kaggle_users.csv"
         os.makedirs(os.path.dirname(data_path), exist_ok=True)
 
-        url = "https://raw.githubusercontent.com/JamisonUK/GroupA/develop/DataSet/kaggle_songs.csv"
+        url = "https://raw.githubusercontent.com/JamisonUK/GroupA/develop/DataSet/kaggle_users.csv"
 
         response = requests.request("GET", url)
 
@@ -55,7 +53,7 @@ def LoadSongs():
         cur = conn.cursor()
         with open(data_path, "r") as file:
             cur.copy_expert(
-                "COPY songs_temp FROM STDIN WITH CSV HEADER DELIMITER AS ',' QUOTE '\"'",
+                "COPY users_temp FROM STDIN WITH CSV HEADER DELIMITER AS ',' QUOTE '\"'",
                 file,
             )
         conn.commit()
@@ -63,14 +61,14 @@ def LoadSongs():
     @task
     def merge_data():
         query = """
-            INSERT INTO songs
+            INSERT INTO users
             SELECT *
             FROM (
                 SELECT DISTINCT *
-                FROM songs_temp
+                FROM users_temp
             ) t
-            ON CONFLICT ("Song_ID") DO UPDATE
-            SET "Song_ID" = excluded."Song_ID";
+            ON CONFLICT ("User_ID") DO UPDATE
+            SET "User_ID" = excluded."User_ID";
         """
         try:
             postgres_hook = PostgresHook(postgres_conn_id="data-test")
@@ -82,8 +80,8 @@ def LoadSongs():
         except Exception as e:
             return 1
 
-    [create_songs, create_songs_temp] >> get_data() >> merge_data()
+    [create_users, create_users_temp] >> get_data() >> merge_data()
 
 
 
-dag = LoadSongs()
+dag = LoadUsers()
