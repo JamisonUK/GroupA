@@ -30,9 +30,9 @@
     <br />
     <a href="https://github.com/users/JamisonUK/projects/1">Kanban Board</a>
     ·
-    <a href="https://github.com/JamisonUK/GroupA/issues">Log Issue</a>
+    <a href="https://github.com/JamisonUK/GroupA/issues">Log an Issue</a>
     ·
-    <a href="https://github.com/JamisonUK/GroupA/FAQ.md">FAQ</a>
+    <a href="https://github.com/JamisonUK/GroupA/wiki/Quick-Guide">Quick Guide</a>
   </p>
 </div>
 
@@ -80,9 +80,8 @@ http://millionsongdataset.com/
 We will be coordinating data from several sets that will contain information
 about songs from listener data to lyric content.
 
-A quick guide is available in Wiki section for general installation and command lines etc.
+A Quick Guide is available in Wiki section for general installation and command lines etc.
 
-https://github.com/JamisonUK/GroupA/wiki/Wiki
 
 <!-- Back to top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,11 +128,11 @@ Getting started section
    ```
 4. Mount Airflow Image
    ```sh
-   docker compose up airflow-init
+   docker-compose up airflow-init
    ```
 5. Launch Docker
    ```sh
-   docker compose
+   docker-compose up
    ```
 6. Navigate to localhost://8080
 
