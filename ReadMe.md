@@ -156,8 +156,8 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 - [x] Prioritising the requirements (if applicable)
 - [x] Task allocation
 - [x] Identifying the scope of your project
-- [ ] Identifying the stakeholders
-- [ ] Risk management
+- [x] Identifying the stakeholders
+- [x] Risk management
 
 
 
