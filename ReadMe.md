@@ -202,7 +202,7 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
 - Sprint 4
 
    - DAGs set up
-   - Spotify API partially implemented
+   - Spotify API  implemented
    - Postgres database functional
    - Airflow working
    - Implementation done
