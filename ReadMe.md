@@ -178,7 +178,37 @@ _Please refer to Apache Airflow [Documentation](https://airflow.apache.org/)_
   - Necessary starting docker files for the project set up and working.
   - Correct branches for GitFlow workflow created – includes master, develop, and release branches.
   - The first release was created on GitHub.
-  - Code of Conduct defined.
+  - Code of Conduct defined
+
+- Sprint 2
+ 
+  - Kanban Board being used
+  - Issues updated
+  - Dataset Implemented as csv
+  - Apache airflow set up on all individuals computers
+  - Zube.IO Updated
+  - Fix issue with docker
+  
+
+- Sprint 3
+     
+  - Dags is completed/running: 
+  - Dataset is now live: GitLFS - Develop branch
+  - Api selected: Spotify
+  - Docker Compose bug fixed
+  - Develop branch being used
+  - Kanban Board Updated
+
+- Sprint 4
+
+   - DAGs set up
+   - Spotify API partially implemented
+   - Postgres database functional
+   - Airflow working
+   - Implementation done
+   - Front end elastisearch
+     
+  
 
 
 
